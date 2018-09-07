@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity_custom_intent"
+    android:orientation="vertical"
+    android:background="@drawable/login2">
+    <ProgressBar
+        android:id="@+id/login_intent_custom_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:theme="@style/AppTheme"
+        android:scrollbarStyle="insideOverlay"/>
+
+    <ScrollView
+        android:id="@+id/login_intent_custom_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_custom_intent_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/email_intent_cumtom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"/>
+
+            <EditText
+                android:id="@+id/password_intent_custom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:imeActionId="6"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"/>
+
+            <Button
+                android:id="@+id/signin_intent_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="SignIn"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"/>
+            <TextView
+                android:text="Not have account?signup here"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signup_intent_button"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
